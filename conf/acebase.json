@@ -1,0 +1,7 @@
+{
+    "host": "localhost",
+    "port": 10180,
+    "dbname": "data/dbc",
+    "https": false,
+    "cachename": "data/dbc_cache"
+}
