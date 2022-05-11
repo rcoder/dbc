@@ -1,0 +1,18 @@
+diff --git a/node_modules/acebase-core/package.json b/node_modules/acebase-core/package.json
+index ac217d1..1a0e63a 100644
+--- a/node_modules/acebase-core/package.json
++++ b/node_modules/acebase-core/package.json
+@@ -34,7 +34,12 @@
+   ],
+   "author": "Ewout Stortenbeker <me@appy.one> (http://appy.one)",
+   "license": "MIT",
+-
++  "browser": {
++    "./dist/cjs/process/index.js": "./dist/cjs/process/browser.js",
++    "./dist/esm/process/index.js": "./dist/esm/process/browser.js",
++    "./dist/cjs/cuid/fingerprint/index.js": "./dist/cjs/cuid/fingerprint/browser.js",
++    "./dist/esm/cuid/fingerprint/index.js": "./dist/esm/cuid/fingerprint/browser.js"
++  },
+   "devDependencies": {
+     "@types/jasmine": "^3.7.4",
+     "@types/node": "^14.14.6",

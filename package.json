@@ -9,13 +9,16 @@
     "prepare": "svelte-kit sync",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "dbserver": "node scripts/db-server.cjs"
+    "dbserver": "node scripts/db-server.cjs",
+    "patch": "patch-package acebase-core --exclude 'nothing' --use-yarn"
   },
   "devDependencies": {
     "@sveltejs/kit": "next",
     "acebase": "^1.18.0",
     "acebase-client": "^1.13.0",
+    "acebase-core": "^1.15.0",
     "dotenv": "^16.0.0",
+    "patch-package": "^6.4.7",
     "prettier": "^2.6.2",
     "rxjs": "^7.5.5",
     "svelte": "^3.44.0",
